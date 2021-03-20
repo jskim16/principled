@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>2 Product Page - Server Side Rendering</title>
+    <link rel="icon" href="data:;base64,=">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/common/page.css" rel="stylesheet">
+  </head>
+  <body>
+    <main id="app">
+    <h1 id="store">The Model Store</h1>
+    <blue-basket id="basket"><div class="empty">basket: 0 item(s)</div></blue-basket>
+    <div id="image"><div><img src="/red/images/tractor-red.jpg" alt="Porsche-Diesel Master 419" /></div></div>
+    <h2 id="name">Tractor <small>Porsche-Diesel Master 419</small></h2>
+    <div id="options">
+    <a href="/t_porsche" class="active" type="button" data-sku="t_porsche">
+      <img src="/red/images/tractor-red-thumb.jpg" alt="Porsche-Diesel Master 419" />
+    </a>
+
+    <a href="/t_fendt" class="" type="button" data-sku="t_fendt">
+      <img src="/red/images/tractor-green-thumb.jpg" alt="Fendt F20 Dieselroß" />
+    </a>
+
+    <a href="/t_eicher" class="" type="button" data-sku="t_eicher">
+      <img src="/red/images/tractor-blue-thumb.jpg" alt="Eicher Diesel 215/16" />
+    </a>
+  </div>
+    <blue-buy id="buy" sku="t_porsche"><button type="button">buy for 66,00 €</button></blue-buy>
+    <green-recos id="reco" sku="t_porsche">
+    <h3>Related Products</h3>
+    <img src="./green/images/reco_3.jpg" alt="Reco 3" /><img src="./green/images/reco_5.jpg" alt="Reco 5" /><img src="./green/images/reco_6.jpg" alt="Reco 6" />
+  </green-recos>
+  </main>
+    <script src="/common/document-register-element.js"></script>
+    <script src="/red/page.js" async></script>
+    <script src="/blue/fragments.js" async></script>
+    <script src="/green/fragments.js" async></script>
+  </body>
+</html>
